@@ -1,12 +1,36 @@
-# React + Vite
+# 🌟 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive **portfolio website** built with **React.js** for the frontend and **Python Flask** for the backend API.  
+This portfolio showcases my skills, projects, and experience, with a clean UI and smooth animations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Frontend:** Built using **React.js** and vanilla JavaScript for dynamic UI updates.
+- **Backend:** **Python Flask API** to handle contact form submissions and data fetching.
+- **Animations:** Smooth transitions and effects using modern animation libraries.
+- **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+- **SEO Friendly:** Optimized structure for better discoverability.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React.js
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Tailwind CSS (optional)
+- GSAP / Locomotive Scroll (for animations)
+
+**Backend:**
+- Python 3.x
+- Flask
+- REST API
+
+**Other Tools:**
+- Git & GitHub for version control
+- VS Code as IDE
+
+---
