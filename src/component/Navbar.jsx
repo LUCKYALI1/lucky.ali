@@ -26,7 +26,7 @@ function Navbar() {
               key={link}
               to={`/${link.toLowerCase()}`}
               className={({ isActive }) =>
-                `heading text-[1.3rem] tracking-[-0.5px] font-[550] text-black leading-tight ${
+                `heading text-[1.33rem] tracking-tighter font-[550] text-black leading-tight ${
                   isActive ? "underline" : ""
                 }`
               }
