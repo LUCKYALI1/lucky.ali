@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import linkedinLogo from "../assets/linkedin_logo.svg";
 import githubLogo from "../assets/github_logo.svg";
 import leetcodeLogo from "../assets/leetcode_logo.svg";
-
+import { useRef, useEffect, useState } from "react";
 
 function Navbar() {
   const links = ["About", "Skills", "Projects", "Contact"];
@@ -14,8 +14,17 @@ function Navbar() {
     { icon: leetcodeLogo, url: "https://leetcode.com/yourusername" },
   ];
 
+  const navbarRef = useRef(null);
+  const [navbarHeight, setNavbarHeight] = useState(0);
+
+  useEffect(() => {
+    if (navbarRef.current) {
+      setNavbarHeight(navbarRef.current.clientHeight);
+    }
+  }, []);
+
   return (
-    <div className="bg-[#FF6AC2] w-full fixed">
+    <div ref={navbarRef} className="bg-[#FF6AC2] w-full fixed z-50" data-navbar="main">
       {/* navbar wrapper */}
       <div className="navbar-wrapper px-20 w-full flex justify-between items-center py-6">
         
@@ -38,8 +47,6 @@ function Navbar() {
 
         {/* Logo (Center) */}
         <div className="flex items-center gap-2">
-          {/* If you have a logo file, uncomment below */}
-          {/* <img src={googleLabsIcon} alt="Google Labs" className="w-6 h-6" /> */}
           <h1 className="heading text-[1.8rem] tracking-tighter font-[550] text-black leading-tight relative left-[-100%]">
             Lucky.ali
           </h1>
@@ -68,3 +75,4 @@ function Navbar() {
 }
 
 export default Navbar;
+export { Navbar };
